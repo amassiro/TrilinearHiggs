@@ -4,6 +4,10 @@ See here for the model:
 
     https://github.com/amassiro/HiggsTrilinear
 
+    
+Where:
+
+    /afs/cern.ch/work/a/amassiro/Latinos/Framework/Combine/HiggsTrilinear/CMSSW_8_1_0/src/HiggsAnalysis/TrilinearHiggs
 
     
 Run the model:
