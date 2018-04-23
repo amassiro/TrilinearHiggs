@@ -50,16 +50,39 @@ class HiggsTrilinear(PhysicsModel):
         # N -->   N * ( 1 + z_0 * (k-1) ) = N * alpha(k)
         # with z_0 hardcoded for each bin of p_T Higgs
         #
-        
+        #
+        # Pt bin: [0, 40] , [40, 80], [80, inf]
+        #   ttH    0.893     0.915      0.950  
+        #   W-H    0.967     0.973      0.990  
+        #   W+H    0.967     0.973      0.990  
+        #    ZH    0.963     0.972      0.990  
+        # 
         z0map = {
-                 "hpt1":1.10,
-                 "hpt2":0.30,
-                 "hpt3":0.10,
-                 "hpt4":0.03
+                 "ttH_hgg_1":0.893,
+                 "ttH_hgg_2":0.915,
+                 "ttH_hgg_3":0.950,
+                 #
+                 "WH_hgg_1":0.967,
+                 "WH_hgg_2":0.973,
+                 "WH_hgg_3":0.990,
+                 #
+                 "ZH_hgg_1":0.963,
+                 "ZH_hgg_2":0.972,
+                 "ZH_hgg_3":0.990,
                  }
 
+        #z0map = {
+                 #"hpt1":1.10,
+                 #"hpt2":0.30,
+                 #"hpt3":0.10,
+                 #"hpt4":0.03
+                 #}
+        #for proc in ["hpt1","hpt2","hpt3","hpt4"]: 
 
-        for proc in ["hpt1","hpt2","hpt3","hpt4"]: 
+        for proc in ["ttH_hgg_1","ttH_hgg_2","ttH_hgg_3",
+                     "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
+                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3"
+                     ]: 
           alpha = z0map[proc]
           #self.modelBuilder.factory_("expr::XSscal_%s(\"1+(@0-1)*%g\",k_lambda)" % (proc,alpha))
           self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g)*@1\",k_lambda,r)" % (proc,alpha))
@@ -81,7 +104,12 @@ class HiggsTrilinear(PhysicsModel):
 
     def getYieldScale(self,bin,process):
 
-      if process in ["hpt1","hpt2","hpt3","hpt4"]: 
+      #if process in ["hpt1","hpt2","hpt3","hpt4"]: 
+
+      if process in ["ttH_hgg_1","ttH_hgg_2","ttH_hgg_3",
+                     "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
+                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3"
+                     ]: 
         return "XSscal_" + process
   
       else:
@@ -90,3 +118,6 @@ class HiggsTrilinear(PhysicsModel):
 
 
 higgsTrilinear = HiggsTrilinear()
+
+
+
