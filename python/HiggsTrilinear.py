@@ -58,9 +58,9 @@ class HiggsTrilinear(PhysicsModel):
         #    ZH    0.963     0.972      0.990  
         # 
         z0map = {
-                 "ttH_hgg_1":0.893,
-                 "ttH_hgg_2":0.915,
-                 "ttH_hgg_3":0.950,
+                 "ttH_hgg_0":0.893,
+                 "ttH_hgg_1":0.915,
+                 "ttH_hgg_2":0.950,
                  #
                  "WH_hgg_1":0.967,
                  "WH_hgg_2":0.973,
@@ -79,7 +79,7 @@ class HiggsTrilinear(PhysicsModel):
                  #}
         #for proc in ["hpt1","hpt2","hpt3","hpt4"]: 
 
-        for proc in ["ttH_hgg_1","ttH_hgg_2","ttH_hgg_3",
+        for proc in ["ttH_hgg_0","ttH_hgg_1","ttH_hgg_2",
                      "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
                      "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3"
                      ]: 
