@@ -69,6 +69,12 @@ class HiggsTrilinear(PhysicsModel):
                  "ZH_hgg_1":0.963,
                  "ZH_hgg_2":0.972,
                  "ZH_hgg_3":0.990,
+                 #
+                 # VH as WH
+                 #
+                 "VH_0":0.967,
+                 "VH_1":0.973,
+                 "VH_2":0.990,
                  }
 
         #z0map = {
@@ -81,7 +87,8 @@ class HiggsTrilinear(PhysicsModel):
 
         for proc in ["ttH_hgg_0","ttH_hgg_1","ttH_hgg_2",
                      "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
-                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3"
+                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3",
+                     "VH_0", "VH_1", "VH_2"
                      ]: 
           alpha = z0map[proc]
           #self.modelBuilder.factory_("expr::XSscal_%s(\"1+(@0-1)*%g\",k_lambda)" % (proc,alpha))
@@ -108,7 +115,8 @@ class HiggsTrilinear(PhysicsModel):
 
       if process in ["ttH_hgg_1","ttH_hgg_2","ttH_hgg_3",
                      "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
-                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3"
+                     "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3",
+                     "VH_0", "VH_1", "VH_2"
                      ]: 
         return "XSscal_" + process
   
