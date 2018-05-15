@@ -25,8 +25,13 @@ Running on the workspace (actual scanning of the k_lambda parameter):
             --setParameters k_lambda=1,r=1     \
             --verbose -1
 
-    combine -M MultiDimFit model_test.root  --algo=grid --points 200  -m 125   -t -1 --expectSignal=1     \
+    combine -M MultiDimFit model_test.root  --algo=grid --points 100  -m 125   -t -1 --expectSignal=1     \
             --setParameterRanges k_lambda=-15,15:r=0.0,2.0       \
+            --setParameters k_lambda=1,r=1     \
+            --verbose -1
+
+    combine -M MultiDimFit model_test.root  --algo=grid --points 300  -m 125   -t -1 --expectSignal=1     \
+            --setParameterRanges k_lambda=-10,10:r=0.0,2.0       \
             --setParameters k_lambda=1,r=1     \
             --verbose -1
 
@@ -56,5 +61,9 @@ Draw:
 
     r99t higgsCombineTest.MultiDimFit.mH125-signal1-tthonly.root   higgsCombineTest.MultiDimFit.mH125-signal1-tthonly.root    draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
 
+    
+    r99t higgsCombineTest.MultiDimFit.mH125.VH.tth.root   higgsCombineTest.MultiDimFit.mH125.VH.tth.root    draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
+
+    
     
     
