@@ -250,7 +250,8 @@ void draw2D(std::string xName = "r_{1}", std::string yName = "r_{3}", std::strin
   TLatex * tex3;
   //   tex3 = new TLatex(0.236,0.92,"L = 12.9 fb^{-1}  Preliminary");
   //   tex3 = new TLatex(0.236,0.92,"L = 15.2 fb^{-1}");
-  tex3 = new TLatex(0.55,0.92,"L = 15.2 fb^{-1}   (13 TeV)");
+//   tex3 = new TLatex(0.55,0.92,"L = 15.2 fb^{-1}   (13 TeV)");
+  tex3 = new TLatex(0.55,0.92,"L = XX fb^{-1}   (13 TeV)");
   //   tex3 = new TLatex(0.55,0.92,"L = 2.3 fb^{-1}   (13 TeV)");
   //     tex3 = new TLatex(0.55,0.92,"L = 12.9 fb^{-1}   (13 TeV)");
   tex3->SetNDC();

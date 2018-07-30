@@ -45,9 +45,14 @@ class HiggsTrilinear(PhysicsModel):
         #
         # model: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/HiggsSelfCoupling
         #
+
         
         #
-        # N -->   N * ( 1 + z_0 * (k-1) ) = N * alpha(k)
+        # N -->   N * ( 1 + C1 * (k-1) + (k*k-1)*C2(k) ) = N * alpha(k)
+        #
+        # C2(k) = -1.536/1000 /  (1 + k*k*1.536/1000)
+        #
+        # N -->   N * ( 1 + C1 * (k-1) - (k*k-1)* 1.536/1000 /  (1 + k*k*1.536/1000) )
         # with z_0 hardcoded for each bin of p_T Higgs
         #
         #
@@ -57,24 +62,42 @@ class HiggsTrilinear(PhysicsModel):
         #   W+H    0.967     0.973      0.990  
         #    ZH    0.963     0.972      0.990  
         # 
-        z0map = {
-                 "ttH_hgg_0":0.893,
-                 "ttH_hgg_1":0.915,
-                 "ttH_hgg_2":0.950,
+        C1map = {
+                 #"ttH_hgg_0":0.893,
+                 #"ttH_hgg_1":0.915,
+                 #"ttH_hgg_2":0.950,
+                 ##
+                 #"WH_hgg_1":0.967,
+                 #"WH_hgg_2":0.973,
+                 #"WH_hgg_3":0.990,
+                 ##
+                 #"ZH_hgg_1":0.963,
+                 #"ZH_hgg_2":0.972,
+                 #"ZH_hgg_3":0.990,
+                 ##
+                 ## VH as WH
+                 ##
+                 #"VH_0":0.967,
+                 #"VH_1":0.973,
+                 #"VH_2":0.990,
                  #
-                 "WH_hgg_1":0.967,
-                 "WH_hgg_2":0.973,
-                 "WH_hgg_3":0.990,
+                 "ttH_hgg_0":0.05,
+                 "ttH_hgg_1":0.04,
+                 "ttH_hgg_2":0.02,
                  #
-                 "ZH_hgg_1":0.963,
-                 "ZH_hgg_2":0.972,
-                 "ZH_hgg_3":0.990,
+                 "WH_hgg_1":0.015,
+                 "WH_hgg_2":0.010,
+                 "WH_hgg_3":0.004,
+                 #
+                 "ZH_hgg_1":0.020,
+                 "ZH_hgg_2":0.015,
+                 "ZH_hgg_3":0.005,
                  #
                  # VH as WH
                  #
-                 "VH_0":0.967,
-                 "VH_1":0.973,
-                 "VH_2":0.990,
+                 "VH_0":0.015,
+                 "VH_1":0.010,
+                 "VH_2":0.004,
                  }
 
         #z0map = {
@@ -90,13 +113,8 @@ class HiggsTrilinear(PhysicsModel):
                      "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3",
                      "VH_0", "VH_1", "VH_2"
                      ]: 
-          alpha = z0map[proc]
-          #self.modelBuilder.factory_("expr::XSscal_%s(\"1+(@0-1)*%g\",k_lambda)" % (proc,alpha))
-          self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g)*@1\",k_lambda,r)" % (proc,alpha))
-        
-        # make a dummy scaler of one ?
-        #self.modelBuilder.doVar("ONE[1,1,1]")
-        #self.modelBuilder.out.var("ONE").setConstant(True)
+          alpha = C1map[proc]
+          self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g-(@0*@0-1)*(1.536/1000/(1 + @0*@0*1.536/1000)))*@1\",k_lambda,r)" % (proc,alpha))
 
         print self.poiNames
         self.modelBuilder.doSet("POI",self.poiNames)
