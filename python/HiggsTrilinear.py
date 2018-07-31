@@ -115,6 +115,9 @@ class HiggsTrilinear(PhysicsModel):
                      ]: 
           alpha = C1map[proc]
           self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g-(@0*@0-1)*(1.536/1000/(1 + @0*@0*1.536/1000)))*@1\",k_lambda,r)" % (proc,alpha))
+          #self.modelBuilder.factory_("expr::XSscal_%s(\"@0\",r)" % (proc))
+          #self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g)*@1\",k_lambda,r)" % (proc,alpha))
+
 
         print self.poiNames
         self.modelBuilder.doSet("POI",self.poiNames)

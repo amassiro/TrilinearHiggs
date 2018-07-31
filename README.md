@@ -54,7 +54,7 @@ Running on the workspace (actual scanning of the k_lambda parameter):
         
     
 
-    combineTool.py -d model_test.root -M MultiDimFit    \
+    combineTool.py -d model_test.root -M MultiDimFit   -t -1 --expectSignal=1    \
                --algo=grid     --X-rtd OPTIMIZE_BOUNDS=0      -n "mytest2"   \
                --setParameterRanges k_lambda=-20,20:r=0.0,2.0       \
                --setParameters k_lambda=1,r=1     \
@@ -68,7 +68,68 @@ Running on the workspace (actual scanning of the k_lambda parameter):
 
     
     
+    combineTool.py -d model_test.root -M MultiDimFit   -t -1 --expectSignal=1    \
+               --algo=grid     --X-rtd OPTIMIZE_BOUNDS=0      -n "mytest1d"   \
+               --setParameterRanges k_lambda=-20,20       \
+               --redefineSignalPOIs k_lambda --freezeParameters r --setParameters r=1 \
+               --points 200    --job-mode lxbatch --task-name lxbatch-klmu-1d --sub-opts='-q 8nm' --split-points 1 
+
+               
+    hadd higgsCombineLxbatchmytest1d.root         higgsCombinemytest1d.POINTS.*.MultiDimFit.mH120.root
+
+    r99t higgsCombineLxbatchmytest1d.root  higgsCombineLxbatchmytest1d.root    draw.cxx
+               
+ 
+ 
+ 
+ 
+    combineTool.py -d model_test.root -M MultiDimFit   -t -1 --expectSignal=1    \
+               --algo=grid     --X-rtd OPTIMIZE_BOUNDS=0      -n "mytest1dJust1D"   \
+               --setParameterRanges k_lambda=-20,20       \
+               --setParameters k_lambda=-4,r=1     \
+               --redefineSignalPOIs k_lambda --freezeParameters r \
+               --points 200    --job-mode lxbatch --task-name lxbatch-klmu-1d --sub-opts='-q 8nm' --split-points 1 
+
+               
+    hadd higgsCombineLxbatchmytest1dJust1D.root         higgsCombinemytest1dJust1D.POINTS.*.MultiDimFit.mH120.root
+
+    r99t higgsCombineLxbatchmytest1dJust1D.root  higgsCombineLxbatchmytest1dJust1D.root    draw.cxx
+               
+    combine -M MultiDimFit model_test.root  --algo=grid --points 100  -m 125   -t -1 --expectSignal=1     \
+            --setParameterRanges k_lambda=-20,20       \
+            --setParameters k_lambda=-4,r=1     \
+            --redefineSignalPOIs k_lambda --freezeParameters r \
+            --verbose -1
     
+    
+    
+    
+
+    combineTool.py -d model_test.root -M MultiDimFit   -t -1   \
+               --algo=grid     --X-rtd OPTIMIZE_BOUNDS=0      -n "mytest1dJust1Dmu"   \
+               --setParameterRanges r=0,2       \
+               --setParameters k_lambda=1,r=1     \
+               --redefineSignalPOIs r --freezeParameters k_lambda \
+               --points 100    --job-mode lxbatch --task-name lxbatch-klmu-1d-mu --sub-opts='-q 8nm' --split-points 1 
+
+               
+    combineTool.py -d model_test.root -M MultiDimFit   -t -1 --expectSignal=1    \
+               --algo=grid     --X-rtd OPTIMIZE_BOUNDS=0      -n "mytest1dJust1Dmu"   \
+               --setParameterRanges r=0,2       \
+               --setParameters r=1     \
+               --redefineSignalPOIs r \
+               --points 100    --job-mode lxbatch --task-name lxbatch-klmu-1d-mu --sub-opts='-q 8nm' --split-points 1 
+               
+               
+    hadd higgsCombineLxbatchmytest1dJust1Dmu.root         higgsCombinemytest1dJust1Dmu.POINTS.*.MultiDimFit.mH120.root
+
+
+    r99t higgsCombineLxbatchmytest1dJust1Dmu.root  higgsCombineLxbatchmytest1dJust1Dmu.root    draw.cxx
+    
+    
+               
+               
+               
     
     combine -M MultiDimFit model_test.root  --algo=grid --points 1000  -m 125    \
             --setParameterRanges k_lambda=-20,20:r=0.0,2.0       \

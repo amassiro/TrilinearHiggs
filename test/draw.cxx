@@ -5,14 +5,16 @@ void draw() {
   int n_data = 0;
   
   TTree* limit = (TTree*) _file0->Get("limit");  
-  n = limit->Draw("2*deltaNLL:k_lambda","deltaNLL<10 && deltaNLL>-30","l");
+  n = limit->Draw("2*deltaNLL:r","deltaNLL<10 && deltaNLL>-30","l");
+//   n = limit->Draw("2*deltaNLL:k_lambda","deltaNLL<10 && deltaNLL>-30","l");
   TGraph *graphScan = new TGraph(n,limit->GetV2(),limit->GetV1());
   graphScan->RemovePoint(0);
   
   TGraph *graphScanData = 0;
   if (_file1) {
     TTree* limitData = (TTree*) _file1->Get("limit");  
-    n_data = limitData->Draw("2*deltaNLL:k_lambda","deltaNLL<40 && deltaNLL>-30","l");
+    n_data = limitData->Draw("2*deltaNLL:r","deltaNLL<40 && deltaNLL>-30","l");
+//     n_data = limitData->Draw("2*deltaNLL:k_lambda","deltaNLL<40 && deltaNLL>-30","l");
     graphScanData = new TGraph(n_data,limitData->GetV2(),limitData->GetV1());
     graphScanData->RemovePoint(0);
     graphScanData->SetTitle("");
