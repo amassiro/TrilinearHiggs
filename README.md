@@ -13,6 +13,7 @@ Where:
 Run the model:
     
     text2workspace.py -m 125 datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
+    text2workspace.py        datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
 
     DatacardMassiro_ttHOnly_v1.dat
     DatacardMassiro_ttHOnly_v2.dat
@@ -48,10 +49,39 @@ Running on the workspace (actual scanning of the k_lambda parameter):
     combine -M MultiDimFit model_test.root  --algo=grid --points 120  -m 125   -t -1 --expectSignal=1     \
             --redefineSignalPOIs k_lambda --freezeParameters r --setParameters r=1    --setParameterRanges k_lambda=-20,20     \
             --verbose -1
-        
+    
+    combine -M MultiDimFit model_test.root  --algo=grid --points 10  -m 125   -t -1 --expectSignal=1     \
+            --redefineSignalPOIs k_lambda --freezeParameters r --setParameters r=1    --setParameterRanges k_lambda=-20,20     \
+            --verbose -1
+    
+    
+    combine -M MultiDimFit model_test.root  --algo=grid --points 10  -m 125   -t -1 --expectSignal=1     \
+            --redefineSignalPOIs r --freezeParameters k_lambda --setParameters k_lambda=1    --setParameterRanges r=0,2     \
+            --verbose -1
+    
 
-        
-        
+    
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 10  -m 125   -t -1 --expectSignal=1     \
+            --redefineSignalPOIs k_lambda --freezeParameters r --setParameters r=1    --setParameterRanges k_lambda=-20,20     \
+            --verbose -1 --job-mode lxbatch --task-name lxbatch-klmu --sub-opts='-q 8nm' --split-points 1   -n "mytest2" 
+
+    hadd higgsCombineLxbatchmytest2.root         higgsCombinemytest2.POINTS.*.MultiDimFit.mH125.root
+
+    r99t higgsCombineLxbatchmytest2.root  higgsCombineLxbatchmytest2.root    draw.cxx
+
+
+    
+    
+    
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-20,20r=0.0,2.0      \
+            --verbose -1 --job-mode lxbatch --task-name lxbatch-klmu --sub-opts='-q 8nm' --split-points 2   -n "my2D" 
+
+    hadd higgsCombineLxbatchmy2D.root         higgsCombinemy2D.POINTS.*.MultiDimFit.mH125.root
+
+    r99t higgsCombineLxbatchmy2D.root  higgsCombineLxbatchmy2D.root    draw.cxx
+
+
     
 
     combineTool.py -d model_test.root -M MultiDimFit   -t -1 --expectSignal=1    \
