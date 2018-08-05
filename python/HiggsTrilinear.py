@@ -36,10 +36,10 @@ class HiggsTrilinear(PhysicsModel):
         """Create POI and other parameters, and define the POI set."""
         
         # trilinear Higgs couplings modified 
-        self.modelBuilder.doVar("k_lambda[1,-50,50]")
+        self.modelBuilder.doVar("k_lambda[1,-200,200]")
         self.poiNames = "k_lambda"
 
-        self.modelBuilder.doVar("r[1,-50,50]")
+        self.modelBuilder.doVar("r[1,-10,10]")
         self.poiNames += ",r"
 
         #
@@ -81,9 +81,13 @@ class HiggsTrilinear(PhysicsModel):
                  #"VH_1":0.973,
                  #"VH_2":0.990,
                  #
-                 "ttH_hgg_0":0.05,
-                 "ttH_hgg_1":0.04,
+                 "ttH_hgg_0":0.06,
+                 "ttH_hgg_1":0.03,
                  "ttH_hgg_2":0.02,
+                 #
+                 #"ttH_hgg_0":0.05,
+                 #"ttH_hgg_1":0.04,
+                 #"ttH_hgg_2":0.02,
                  #
                  "WH_hgg_1":0.015,
                  "WH_hgg_2":0.010,

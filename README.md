@@ -80,7 +80,7 @@ Running on the workspace (actual scanning of the k_lambda parameter):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
-            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-20,20r=0.0,2.0      \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-20,20:r=-4.0,4.0       \
             --verbose -1 --job-mode lxbatch --task-name lxbatch-klmu --sub-opts='-q 8nm' --split-points 2   -n "my2D" 
 
     hadd higgsCombineLxbatchmy2D.root         higgsCombinemy2D.POINTS.*.MultiDimFit.mH125.root
@@ -91,14 +91,59 @@ Running on the workspace (actual scanning of the k_lambda parameter):
 
     
     
-    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
-            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-20,20r=0.0,2.0      \
-            --verbose -1 --job-mode condor --task-name condor-klmu  --split-points 2   -n "my2Dcondor" 
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 1000  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-150,150:r=-4.0,4.0       \
+            --verbose -1 --job-mode condor --task-name condor-klmu  --split-points 4   -n "my2Dcondor" 
 
     hadd higgsCombineLxbatchmy2D.root         higgsCombinemy2Dcondor.POINTS.*.MultiDimFit.mH125.root
 
-    r99t higgsCombineLxbatchmy2D.root  higgsCombineLxbatchmy2D.root   draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
+    r99t higgsCombineLxbatchmy2D.root  draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
 
+    ls -alrth higgsCombinemy2Dcondor.POINTS.*.MultiDimFit.mH125.root  | grep -v 6.6K  | grep -v 6.7K  | awk '{print "rm "$9}' | /bin/sh
+
+    
+    
+    
+    
+    
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125     --X-rtd OPTIMIZE_BOUNDS=0   \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-20,20:r=-4.0,4.0      \
+            --verbose -1 --job-mode condor --task-name condor-klmu  --split-points 2   -n "my2DcondorObs" 
+
+    hadd higgsCombineLxbatchmy2DObs.root         higgsCombinemy2DcondorObs.POINTS.*.MultiDimFit.mH125.root
+
+    r99t higgsCombineLxbatchmy2DObs.root   draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
+
+    
+    
+    
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-50,50      \
+            --redefineSignalPOIs k_lambda      --freezeParameters r   \
+            --verbose -1 --job-mode condor --task-name condor-kl  --split-points 2   -n "my1Dklcondor" 
+
+            
+    hadd higgsCombineLxbatchmy1Dklcondor.root         higgsCombinemy1Dklcondor.POINTS.*.MultiDimFit.mH125.root
+
+    r99t higgsCombineLxbatchmy1Dklcondor.root  higgsCombineLxbatchmy1Dklcondor.root   draw.cxx
+
+    
+
+    
+    
+    
+    
+    combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
+            --setParameters r=1:k_lambda=1    --setParameterRanges r=-5,5      \
+            --redefineSignalPOIs r      --freezeParameters k_lambda   \
+            --verbose -1 --job-mode condor --task-name condor-mu  --split-points 2   -n "my1Dmucondor" 
+
+            
+    hadd higgsCombineLxbatchmy1Dmucondor.root         higgsCombinemy1Dmucondor.POINTS.*.MultiDimFit.mH125.root
+
+    r99t higgsCombineLxbatchmy1Dmucondor.root  higgsCombineLxbatchmy1Dmucondor.root   draw.cxx
+
+            
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     
