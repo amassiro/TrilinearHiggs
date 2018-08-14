@@ -15,6 +15,9 @@ Run the model:
     text2workspace.py -m 125 datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
     text2workspace.py        datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
 
+
+    DatacardMassiro_v2.dat
+
     DatacardMassiro_ttHOnly_v1.dat
     DatacardMassiro_ttHOnly_v2.dat
     
