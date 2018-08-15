@@ -7,99 +7,96 @@ jmax *
 kmax *
 ---------------------------------------------
 
-shapes qqH_hgg_0  TTHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_0
-shapes qqH_hgg_1  TTHHadronicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_1
-shapes qqH_hgg_2  TTHHadronicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_2
-shapes qqH_hgg_0  TTHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_0
-shapes qqH_hgg_1  TTHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_1
-shapes qqH_hgg_2  TTHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_2
-shapes qqH_hgg_0  VHMetTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHMetTag_0
-shapes qqH_hgg_0  WHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_0
-shapes qqH_hgg_1  WHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_1
-shapes qqH_hgg_2  WHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_2
+shapes qqH_hgg_0  TTHHadronicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_0
+shapes qqH_hgg_1  TTHHadronicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_1
+shapes qqH_hgg_2  TTHHadronicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHHadronicTag_2
+shapes qqH_hgg_0  TTHLeptonicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_0
+shapes qqH_hgg_1  TTHLeptonicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_1
+shapes qqH_hgg_2  TTHLeptonicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_TTHLeptonicTag_2
+shapes qqH_hgg_0  VHMetTag_0_13TeV           SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHMetTag_0
+shapes qqH_hgg_0  WHLeptonicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_0
+shapes qqH_hgg_1  WHLeptonicTag_1_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_1
+shapes qqH_hgg_2  WHLeptonicTag_2_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_WHLeptonicTag_2
 shapes qqH_hgg_0  VHLeptonicLooseTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHLeptonicLooseTag_0
 shapes qqH_hgg_1  VHLeptonicLooseTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHLeptonicLooseTag_1
 shapes qqH_hgg_2  VHLeptonicLooseTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHLeptonicLooseTag_2
-shapes qqH_hgg_0  VHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHHadronicTag_0
-shapes VH_0       TTHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_0
-shapes VH_1       TTHHadronicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_1
-shapes VH_2       TTHHadronicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_2
-shapes VH_0       TTHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_0
-shapes VH_1       TTHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_1
-shapes VH_2       TTHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_2
-shapes VH_0       VHMetTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHMetTag_0
-shapes VH_0       WHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_0
-shapes VH_1       WHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_1
-shapes VH_2       WHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_2
+shapes qqH_hgg_0  VHHadronicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_vbf_VHHadronicTag_0
+shapes VH_0       TTHHadronicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_0
+shapes VH_1       TTHHadronicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_1
+shapes VH_2       TTHHadronicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHHadronicTag_2
+shapes VH_0       TTHLeptonicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_0
+shapes VH_1       TTHLeptonicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_1
+shapes VH_2       TTHLeptonicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_TTHLeptonicTag_2
+shapes VH_0       VHMetTag_0_13TeV           SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHMetTag_0
+shapes VH_0       WHLeptonicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_0
+shapes VH_1       WHLeptonicTag_1_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_1
+shapes VH_2       WHLeptonicTag_2_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_WHLeptonicTag_2
 shapes VH_0       VHLeptonicLooseTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHLeptonicLooseTag_0
 shapes VH_1       VHLeptonicLooseTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHLeptonicLooseTag_1
 shapes VH_2       VHLeptonicLooseTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHLeptonicLooseTag_2
-shapes VH_0       VHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHHadronicTag_0
-shapes data_obs_0 TTHHadronicTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHHadronicTag_0
-shapes data_obs_1 TTHHadronicTag_1_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHHadronicTag_1
-shapes data_obs_2 TTHHadronicTag_2_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHHadronicTag_2
-shapes data_obs_0 TTHLeptonicTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHLeptonicTag_0
-shapes data_obs_1 TTHLeptonicTag_1_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHLeptonicTag_1
-shapes data_obs_2 TTHLeptonicTag_2_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_TTHLeptonicTag_2
-shapes data_obs_0 VHMetTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_VHMetTag_0
-shapes data_obs_0 WHLeptonicTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_WHLeptonicTag_0
-shapes data_obs_1 WHLeptonicTag_1_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_WHLeptonicTag_1
-shapes data_obs_2 WHLeptonicTag_2_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_WHLeptonicTag_2
-shapes data_obs_0 VHLeptonicLooseTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_VHLeptonicLooseTag_0
-shapes data_obs_1 VHLeptonicLooseTag_1_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_VHLeptonicLooseTag_1
-shapes data_obs_2 VHLeptonicLooseTag_2_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_VHLeptonicLooseTag_2
-shapes data_obs_0 VHHadronicTag_0_13TeV BkgFitMassiro_v3.root multipdf:roohist_data_mass_VHHadronicTag_0
-shapes ggH_hgg_0  TTHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_0
-shapes ggH_hgg_1  TTHHadronicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_1
-shapes ggH_hgg_2  TTHHadronicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_2
-shapes ggH_hgg_0  TTHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_0
-shapes ggH_hgg_1  TTHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_1
-shapes ggH_hgg_2  TTHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_2
-shapes ggH_hgg_0  VHMetTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHMetTag_0
-shapes ggH_hgg_0  WHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_0
-shapes ggH_hgg_1  WHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_1
-shapes ggH_hgg_2  WHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_2
+shapes VH_0       VHHadronicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_wzh_VHHadronicTag_0
+shapes data_obs   TTHHadronicTag_0_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHHadronicTag_0
+shapes data_obs   TTHHadronicTag_1_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHHadronicTag_1
+shapes data_obs   TTHHadronicTag_2_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHHadronicTag_2
+shapes data_obs   TTHLeptonicTag_0_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHLeptonicTag_0
+shapes data_obs   TTHLeptonicTag_1_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHLeptonicTag_1
+shapes data_obs   TTHLeptonicTag_2_13TeV     BkgFitMassiro_v3.root      multipdf:roohist_data_mass_TTHLeptonicTag_2
+shapes data_obs   VHMetTag_0_13TeV           BkgFitMassiro_v3.root      multipdf:roohist_data_mass_VHMetTag_0
+shapes data_obs   WHLeptonicTag_0_13TeV      BkgFitMassiro_v3.root      multipdf:roohist_data_mass_WHLeptonicTag_0
+shapes data_obs   WHLeptonicTag_1_13TeV      BkgFitMassiro_v3.root      multipdf:roohist_data_mass_WHLeptonicTag_1
+shapes data_obs   WHLeptonicTag_2_13TeV      BkgFitMassiro_v3.root      multipdf:roohist_data_mass_WHLeptonicTag_2
+shapes data_obs   VHLeptonicLooseTag_0_13TeV BkgFitMassiro_v3.root      multipdf:roohist_data_mass_VHLeptonicLooseTag_0
+shapes data_obs   VHLeptonicLooseTag_1_13TeV BkgFitMassiro_v3.root      multipdf:roohist_data_mass_VHLeptonicLooseTag_1
+shapes data_obs   VHLeptonicLooseTag_2_13TeV BkgFitMassiro_v3.root      multipdf:roohist_data_mass_VHLeptonicLooseTag_2
+shapes data_obs   VHHadronicTag_0_13TeV      BkgFitMassiro_v3.root      multipdf:roohist_data_mass_VHHadronicTag_0
+shapes ggH_hgg_0  TTHHadronicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_0
+shapes ggH_hgg_1  TTHHadronicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_1
+shapes ggH_hgg_2  TTHHadronicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHHadronicTag_2
+shapes ggH_hgg_0  TTHLeptonicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_0
+shapes ggH_hgg_1  TTHLeptonicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_1
+shapes ggH_hgg_2  TTHLeptonicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_TTHLeptonicTag_2
+shapes ggH_hgg_0  VHMetTag_0_13TeV           SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHMetTag_0
+shapes ggH_hgg_0  WHLeptonicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_0
+shapes ggH_hgg_1  WHLeptonicTag_1_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_1
+shapes ggH_hgg_2  WHLeptonicTag_2_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_WHLeptonicTag_2
 shapes ggH_hgg_0  VHLeptonicLooseTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHLeptonicLooseTag_0
 shapes ggH_hgg_1  VHLeptonicLooseTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHLeptonicLooseTag_1
 shapes ggH_hgg_2  VHLeptonicLooseTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHLeptonicLooseTag_2
-shapes ggH_hgg_0  VHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHHadronicTag_0
-shapes ttH_hgg_0  TTHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_0
-shapes ttH_hgg_1  TTHHadronicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_1
-shapes ttH_hgg_2  TTHHadronicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_2
-shapes ttH_hgg_0  TTHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_0
-shapes ttH_hgg_1  TTHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_1
-shapes ttH_hgg_2  TTHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_2
-shapes ttH_hgg_0  VHMetTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHMetTag_0
-shapes ttH_hgg_0  WHLeptonicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_0
-shapes ttH_hgg_1  WHLeptonicTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_1
-shapes ttH_hgg_2  WHLeptonicTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_2
+shapes ggH_hgg_0  VHHadronicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_ggh_VHHadronicTag_0
+shapes ttH_hgg_0  TTHHadronicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_0
+shapes ttH_hgg_1  TTHHadronicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_1
+shapes ttH_hgg_2  TTHHadronicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHHadronicTag_2
+shapes ttH_hgg_0  TTHLeptonicTag_0_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_0
+shapes ttH_hgg_1  TTHLeptonicTag_1_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_1
+shapes ttH_hgg_2  TTHLeptonicTag_2_13TeV     SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_TTHLeptonicTag_2
+shapes ttH_hgg_0  VHMetTag_0_13TeV           SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHMetTag_0
+shapes ttH_hgg_0  WHLeptonicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_0
+shapes ttH_hgg_1  WHLeptonicTag_1_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_1
+shapes ttH_hgg_2  WHLeptonicTag_2_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_WHLeptonicTag_2
 shapes ttH_hgg_0  VHLeptonicLooseTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHLeptonicLooseTag_0
 shapes ttH_hgg_1  VHLeptonicLooseTag_1_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHLeptonicLooseTag_1
 shapes ttH_hgg_2  VHLeptonicLooseTag_2_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHLeptonicLooseTag_2
-shapes ttH_hgg_0  VHHadronicTag_0_13TeV SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHHadronicTag_0
-shapes bkg_mass_0 TTHHadronicTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHHadronicTag_0_13TeV_bkgshape
-shapes bkg_mass_1 TTHHadronicTag_1_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHHadronicTag_1_13TeV_bkgshape
-shapes bkg_mass_2 TTHHadronicTag_2_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHHadronicTag_2_13TeV_bkgshape
-shapes bkg_mass_0 TTHLeptonicTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHLeptonicTag_0_13TeV_bkgshape
-shapes bkg_mass_1 TTHLeptonicTag_1_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHLeptonicTag_1_13TeV_bkgshape
-shapes bkg_mass_2 TTHLeptonicTag_2_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_TTHLeptonicTag_2_13TeV_bkgshape
-shapes bkg_mass_0 VHMetTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_VHMetTag_0_13TeV_bkgshape
-shapes bkg_mass_0 WHLeptonicTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_WHLeptonicTag_0_13TeV_bkgshape
-shapes bkg_mass_1 WHLeptonicTag_1_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_WHLeptonicTag_1_13TeV_bkgshape
-shapes bkg_mass_2 WHLeptonicTag_2_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_WHLeptonicTag_2_13TeV_bkgshape
-shapes bkg_mass_0 VHLeptonicLooseTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_VHLeptonicLooseTag_0_13TeV_bkgshape
-shapes bkg_mass_1 VHLeptonicLooseTag_1_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_VHLeptonicLooseTag_1_13TeV_bkgshape
-shapes bkg_mass_2 VHLeptonicLooseTag_2_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_VHLeptonicLooseTag_2_13TeV_bkgshape
-shapes bkg_mass_0 VHHadronicTag_0_13TeV BkgFitMassiro_v3.root multipdf:CMS_hgg_VHHadronicTag_0_13TeV_bkgshape
+shapes ttH_hgg_0  VHHadronicTag_0_13TeV      SignalModelMassiro_v4.root wsig_13TeV:hggpdfsmrel_13TeV_tth_VHHadronicTag_0
+shapes bkg_mass_0 TTHHadronicTag_0_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHHadronicTag_0_13TeV_bkgshape
+shapes bkg_mass_1 TTHHadronicTag_1_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHHadronicTag_1_13TeV_bkgshape
+shapes bkg_mass_2 TTHHadronicTag_2_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHHadronicTag_2_13TeV_bkgshape
+shapes bkg_mass_0 TTHLeptonicTag_0_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHLeptonicTag_0_13TeV_bkgshape
+shapes bkg_mass_1 TTHLeptonicTag_1_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHLeptonicTag_1_13TeV_bkgshape
+shapes bkg_mass_2 TTHLeptonicTag_2_13TeV     BkgFitMassiro_v3.root      multipdf:CMS_hgg_TTHLeptonicTag_2_13TeV_bkgshape
+shapes bkg_mass_0 VHMetTag_0_13TeV           BkgFitMassiro_v3.root      multipdf:CMS_hgg_VHMetTag_0_13TeV_bkgshape
+shapes bkg_mass_0 WHLeptonicTag_0_13TeV      BkgFitMassiro_v3.root      multipdf:CMS_hgg_WHLeptonicTag_0_13TeV_bkgshape
+shapes bkg_mass_1 WHLeptonicTag_1_13TeV      BkgFitMassiro_v3.root      multipdf:CMS_hgg_WHLeptonicTag_1_13TeV_bkgshape
+shapes bkg_mass_2 WHLeptonicTag_2_13TeV      BkgFitMassiro_v3.root      multipdf:CMS_hgg_WHLeptonicTag_2_13TeV_bkgshape
+shapes bkg_mass_0 VHLeptonicLooseTag_0_13TeV BkgFitMassiro_v3.root      multipdf:CMS_hgg_VHLeptonicLooseTag_0_13TeV_bkgshape
+shapes bkg_mass_1 VHLeptonicLooseTag_1_13TeV BkgFitMassiro_v3.root      multipdf:CMS_hgg_VHLeptonicLooseTag_1_13TeV_bkgshape
+shapes bkg_mass_2 VHLeptonicLooseTag_2_13TeV BkgFitMassiro_v3.root      multipdf:CMS_hgg_VHLeptonicLooseTag_2_13TeV_bkgshape
+shapes bkg_mass_0 VHHadronicTag_0_13TeV      BkgFitMassiro_v3.root      multipdf:CMS_hgg_VHHadronicTag_0_13TeV_bkgshape
 
 bin             TTHHadronicTag_0_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_2_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_2_13TeV VHMetTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_2_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_2_13TeV VHHadronicTag_0_13TeV 
 observation     -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
 bin             TTHHadronicTag_0_13TeV TTHHadronicTag_0_13TeV TTHHadronicTag_0_13TeV TTHHadronicTag_0_13TeV TTHHadronicTag_0_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_1_13TeV TTHHadronicTag_2_13TeV TTHHadronicTag_2_13TeV TTHHadronicTag_2_13TeV TTHHadronicTag_2_13TeV TTHHadronicTag_2_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_0_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_1_13TeV TTHLeptonicTag_2_13TeV TTHLeptonicTag_2_13TeV TTHLeptonicTag_2_13TeV TTHLeptonicTag_2_13TeV TTHLeptonicTag_2_13TeV VHMetTag_0_13TeV VHMetTag_0_13TeV VHMetTag_0_13TeV VHMetTag_0_13TeV VHMetTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_0_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_1_13TeV WHLeptonicTag_2_13TeV WHLeptonicTag_2_13TeV WHLeptonicTag_2_13TeV WHLeptonicTag_2_13TeV WHLeptonicTag_2_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_0_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_1_13TeV VHLeptonicLooseTag_2_13TeV VHLeptonicLooseTag_2_13TeV VHLeptonicLooseTag_2_13TeV VHLeptonicLooseTag_2_13TeV VHLeptonicLooseTag_2_13TeV VHHadronicTag_0_13TeV VHHadronicTag_0_13TeV VHHadronicTag_0_13TeV VHHadronicTag_0_13TeV VHHadronicTag_0_13TeV 
-process         ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 
-
-
-
-
+process         ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0 ggH_hgg_1 qqH_hgg_1 VH_1 ttH_hgg_1 bkg_mass_1 ggH_hgg_2 qqH_hgg_2 VH_2 ttH_hgg_2 bkg_mass_2 ggH_hgg_0 qqH_hgg_0 VH_0 ttH_hgg_0 bkg_mass_0
+ 
 process         0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 0 -1 -3 -2 1 
 rate            35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 35900.0 35900.0 35900.0 35900.0 1.0 
 

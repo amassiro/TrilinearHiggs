@@ -56,11 +56,13 @@ class HiggsTrilinear(PhysicsModel):
         # with z_0 hardcoded for each bin of p_T Higgs
         #
         #
-        # Pt bin: [0, 40] , [40, 80], [80, inf]
-        #   ttH    0.893     0.915      0.950  
-        #   W-H    0.967     0.973      0.990  
-        #   W+H    0.967     0.973      0.990  
-        #    ZH    0.963     0.972      0.990  
+        #
+        #            0             1         2
+        # Pt bin: [150, inf] , [50, 150], [0, 50]
+        #   ttH     
+        #   W-H     
+        #   W+H     
+        #    ZH     
         # 
         C1map = {
                  #"ttH_hgg_0":0.893,
@@ -81,27 +83,27 @@ class HiggsTrilinear(PhysicsModel):
                  #"VH_1":0.973,
                  #"VH_2":0.990,
                  #
-                 "ttH_hgg_0":0.06,
+                 "ttH_hgg_0":0.02,
                  "ttH_hgg_1":0.03,
-                 "ttH_hgg_2":0.02,
+                 "ttH_hgg_2":0.06,
                  #
                  #"ttH_hgg_0":0.05,
                  #"ttH_hgg_1":0.04,
                  #"ttH_hgg_2":0.02,
                  #
-                 "WH_hgg_1":0.015,
+                 "WH_hgg_1":0.004,
                  "WH_hgg_2":0.010,
-                 "WH_hgg_3":0.004,
+                 "WH_hgg_3":0.015,
                  #
-                 "ZH_hgg_1":0.020,
+                 "ZH_hgg_1":0.005,
                  "ZH_hgg_2":0.015,
-                 "ZH_hgg_3":0.005,
+                 "ZH_hgg_3":0.020,
                  #
                  # VH as WH
                  #
-                 "VH_0":0.015,
+                 "VH_0":0.005,
                  "VH_1":0.010,
-                 "VH_2":0.004,
+                 "VH_2":0.015,
                  }
 
         #z0map = {
