@@ -120,7 +120,20 @@ class HiggsTrilinear(PhysicsModel):
                      "VH_0", "VH_1", "VH_2"
                      ]: 
           alpha = C1map[proc]
-          self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g-(@0*@0-1)*(1.536/1000/(1 + @0*@0*1.536/1000)))*@1\",k_lambda,r)" % (proc,alpha))
+
+          # not considering the effects on BR (H>xx)
+          #self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g-(@0*@0-1)*(1.536/1000/(1 + @0*@0*1.536/1000)))*@1\",k_lambda,r)" % (proc,alpha))
+
+          # including also the BR effect
+          # N -->   N * ( 1 + C1 * (k-1) - (k*k-1)* 1.536/1000 /  (1 + k*k*1.536/1000) )
+          # N -->   N * ( 1 + C1 * (k-1) - (k*k-1)* 1.536/1000 /  (1 + k*k*1.536/1000) )  * (1 + (k-1)*(Ci - Ctot) / (1+ (k-1)*Ctot) )
+          #
+          # Ci = 0.49*10-3
+          # Ctot = 2.3*10-3
+          # 
+          self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g-(@0*@0-1)*(1.536/1000/(1 + @0*@0*1.536/1000)))*(1+(@0-1)*(0.49-2.3)/1000/(1+(@0-1)*2.3/1000))*@1\",k_lambda,r)" % (proc,alpha))
+
+
           #self.modelBuilder.factory_("expr::XSscal_%s(\"@0\",r)" % (proc))
           #self.modelBuilder.factory_("expr::XSscal_%s(\"(1+(@0-1)*%g)*@1\",k_lambda,r)" % (proc,alpha))
 
