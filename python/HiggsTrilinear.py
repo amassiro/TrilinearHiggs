@@ -64,6 +64,15 @@ class HiggsTrilinear(PhysicsModel):
         #   W+H     
         #    ZH     
         # 
+        #
+        #     Pt binning: 0 50 150 500
+        #     ttH Hadronic: 0.0508135 0.036604 0.0155118
+        #     ttH Leptonic: 0.050483 0.0377599 0.0160557
+        #     VH Hadronic: 0.0119485 0.00274689 -0.000572456
+        #     VH Leptonic Loose: 0.0137786 0.00723102 -9.21914e-05
+        #     WH: 0.0138817 0.0062774 -0.000408755
+        #     ZH: 0.0166121 0.00798076 -0.000183597       
+        #
         C1map = {
                  #"ttH_hgg_0":0.893,
                  #"ttH_hgg_1":0.915,
@@ -83,9 +92,9 @@ class HiggsTrilinear(PhysicsModel):
                  #"VH_1":0.973,
                  #"VH_2":0.990,
                  #
-                 "ttH_hgg_0":0.02,
-                 "ttH_hgg_1":0.03,
-                 "ttH_hgg_2":0.06,
+                 "ttH_hgg_0":0.0155118,
+                 "ttH_hgg_1":0.036604,
+                 "ttH_hgg_2":0.0508135,
                  #
                  #"ttH_hgg_0":0.05,
                  #"ttH_hgg_1":0.04,
@@ -101,9 +110,9 @@ class HiggsTrilinear(PhysicsModel):
                  #
                  # VH as WH
                  #
-                 "VH_0":0.005,
-                 "VH_1":0.010,
-                 "VH_2":0.015,
+                 "VH_0":0.0,
+                 "VH_1":0.0062774,
+                 "VH_2":0.0138817,
                  }
 
         #z0map = {

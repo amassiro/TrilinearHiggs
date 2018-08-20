@@ -91,12 +91,13 @@ Running on the workspace (actual scanning of the k_lambda parameter):
     r99t higgsCombineLxbatchmy2D.root  higgsCombineLxbatchmy2D.root   draw2D.cxx\(\"#mu\",\"k_\{#lambda\}\",\"r\",\"k_lambda\"\)
     r99t higgsCombineLxbatchmy2D_itstrangelyworks.root  higgsCombineLxbatchmy2D_itstrangelyworks.root    draw.cxx
 
+    ls -alrth higgsCombinemy2D.POINTS.*.MultiDimFit.mH125.root  | grep -v 6.6K  | grep -v 6.7K  | awk '{print "rm "$9}' | /bin/sh
 
     
     
     combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 1000  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
             --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-150,150:r=-4.0,4.0       \
-            --verbose -1 --job-mode condor --task-name condor-klmu  --split-points 4   -n "my2Dcondor" 
+            --verbose -1 --job-mode condor --task-name condor-klmu-extended  --split-points 4   -n "my2Dcondor" 
 
     hadd higgsCombineLxbatchmy2D.root         higgsCombinemy2Dcondor.POINTS.*.MultiDimFit.mH125.root
 
@@ -104,9 +105,7 @@ Running on the workspace (actual scanning of the k_lambda parameter):
 
     ls -alrth higgsCombinemy2Dcondor.POINTS.*.MultiDimFit.mH125.root  | grep -v 6.6K  | grep -v 6.7K  | awk '{print "rm "$9}' | /bin/sh
 
-    
-    
-    
+      
     
     
     combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125     --X-rtd OPTIMIZE_BOUNDS=0   \
