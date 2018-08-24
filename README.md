@@ -120,7 +120,7 @@ Running on the workspace (actual scanning of the k_lambda parameter):
     
     
     combineTool.py -M MultiDimFit  -d model_test.root  --algo=grid --points 400  -m 125   -t -1 --expectSignal=1     --X-rtd OPTIMIZE_BOUNDS=0   \
-            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-200,200      \
+            --setParameters r=1:k_lambda=1    --setParameterRanges k_lambda=-100,100      \
             --redefineSignalPOIs k_lambda      --freezeParameters r   \
             --verbose -1 --job-mode condor --task-name condor-kl  --split-points 2   -n "my1Dklcondor" 
 
