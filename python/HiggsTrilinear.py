@@ -162,7 +162,7 @@ class HiggsTrilinear(PhysicsModel):
 
       #if process in ["hpt1","hpt2","hpt3","hpt4"]: 
 
-      if process in ["ttH_hgg_1","ttH_hgg_2","ttH_hgg_3",
+      if process in ["ttH_hgg_0","ttH_hgg_1","ttH_hgg_2",
                      "WH_hgg_1", "WH_hgg_2", "WH_hgg_3",
                      "ZH_hgg_1", "ZH_hgg_2", "ZH_hgg_3",
                      "VH_0", "VH_1", "VH_2"
