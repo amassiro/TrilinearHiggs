@@ -15,6 +15,9 @@ Run the model:
     text2workspace.py -m 125 datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
     text2workspace.py        datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root    
 
+    text2workspace.py        datacard.txt -P HiggsAnalysis.TrilinearHiggs.HiggsTrilinear:higgsTrilinear  --PO=k_lambda,r  -o      model_test.root       --PO C1map=mymap.py
+
+                
 
     DatacardMassiro_v2.dat
 
@@ -40,6 +43,13 @@ Running on the workspace (actual scanning of the k_lambda parameter):
             --setParameters k_lambda=1,r=1     \
             --verbose -1
 
+            
+    combine -M MultiDimFit model_test.root  --algo=grid --points 9  -m 125   -t -1 --expectSignal=1     \
+            --setParameterRanges k_lambda=-10,10:r=0.5,1.5       \
+            --setParameters k_lambda=1,r=1     \
+            --verbose -1
+            
+            
             
             
     combine -M MultiDimFit model_test.root  --algo=grid --points 300  -m 125   -t -1 --expectSignal=1     \

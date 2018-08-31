@@ -22,6 +22,11 @@ class HiggsTrilinear(PhysicsModel):
                     raise RuntimeError, "Higgs mass range definition requires two extrema"
                 elif float(self.mHRange[0]) >= float(self.mHRange[1]):
                     raise RuntimeError, "Extrema for Higgs mass range defined with inverterd order. Second must be larger the first"
+            if po.startswith("C1map="):
+                self.C1mapFile = po.replace("C1map=","")
+                print " C1mapFile = ", self.C1mapFile 
+                self.C1map = eval(open(self.C1mapFile , 'r').read())
+                
 
 #
 # standard, not touched (end)
@@ -73,48 +78,49 @@ class HiggsTrilinear(PhysicsModel):
         #     WH: 0.0138817 0.0062774 -0.000408755
         #     ZH: 0.0166121 0.00798076 -0.000183597       
         #
-        C1map = {
-                 #"ttH_hgg_0":0.893,
-                 #"ttH_hgg_1":0.915,
-                 #"ttH_hgg_2":0.950,
-                 ##
-                 #"WH_hgg_1":0.967,
-                 #"WH_hgg_2":0.973,
-                 #"WH_hgg_3":0.990,
-                 ##
-                 #"ZH_hgg_1":0.963,
-                 #"ZH_hgg_2":0.972,
-                 #"ZH_hgg_3":0.990,
-                 ##
-                 ## VH as WH
-                 ##
-                 #"VH_0":0.967,
-                 #"VH_1":0.973,
-                 #"VH_2":0.990,
-                 #
-                 "ttH_hgg_0":0.0155118,
-                 "ttH_hgg_1":0.036604,
-                 "ttH_hgg_2":0.0508135,
-                 #
-                 #"ttH_hgg_0":0.05,
-                 #"ttH_hgg_1":0.04,
-                 #"ttH_hgg_2":0.02,
-                 #
-                 "WH_hgg_1":0.004,
-                 "WH_hgg_2":0.010,
-                 "WH_hgg_3":0.015,
-                 #
-                 "ZH_hgg_1":0.005,
-                 "ZH_hgg_2":0.015,
-                 "ZH_hgg_3":0.020,
-                 #
-                 # VH as WH
-                 #
-                 "VH_0":0.0,
-                 "VH_1":0.0062774,
-                 "VH_2":0.0138817,
-                 }
-
+        #C1map = {
+        #         #"ttH_hgg_0":0.893,
+        #         #"ttH_hgg_1":0.915,
+        #         #"ttH_hgg_2":0.950,
+        #         ##
+        #         #"WH_hgg_1":0.967,
+        #         #"WH_hgg_2":0.973,
+        #         #"WH_hgg_3":0.990,
+        #         ##
+        #         #"ZH_hgg_1":0.963,
+        #         #"ZH_hgg_2":0.972,
+        #         #"ZH_hgg_3":0.990,
+        #         ##
+        #         ## VH as WH
+        #         ##
+        #         #"VH_0":0.967,
+        #         #"VH_1":0.973,
+        #         #"VH_2":0.990,
+        #         #
+        #         "ttH_hgg_0":0.0155118,
+        #         "ttH_hgg_1":0.036604,
+        #         "ttH_hgg_2":0.0508135,
+        #         #
+        #         #"ttH_hgg_0":0.05,
+        #         #"ttH_hgg_1":0.04,
+        #         #"ttH_hgg_2":0.02,
+        #         #
+        #         "WH_hgg_1":0.004,
+        #         "WH_hgg_2":0.010,
+        #         "WH_hgg_3":0.015,
+        #         #
+        #         "ZH_hgg_1":0.005,
+        #         "ZH_hgg_2":0.015,
+        #         "ZH_hgg_3":0.020,
+        #         #
+        #         # VH as WH
+        #         #
+        #         "VH_0":0.0,
+        #         "VH_1":0.0062774,
+        #         "VH_2":0.0138817,
+        #         }
+        #
+        C1map =  self.C1map
         #z0map = {
                  #"hpt1":1.10,
                  #"hpt2":0.30,
